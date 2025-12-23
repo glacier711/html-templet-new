@@ -3,108 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEDO - Elevating Your Business With Industry Experts</title>
+    <title>Synvo - IT Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Animate.css for WOW.js animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        <div class="container">
-            <p>Sign Up and Receive upto 20% bonus discount on checkout</p>
-            <button class="close-announcement">&times;</button>
-        </div>
-    </div>
-
-    <!-- Header & Navigation -->
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
+            <div class="logo">
+                <h2>Synvo</h2>
+            </div>
             <nav class="navbar">
-                <a href="index.html" class="logo">MEDO</a>
-                
-                <div class="nav-menu" id="navMenu">
-                    <ul class="nav-links">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-menu">
-                                <a href="#">About Us</a>
-                                <a href="#">Our Team</a>
-                                <a href="#">Testimonials</a>
-                                <a href="#">Pricing</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-menu">
-                                <a href="#">Managed IT Services</a>
-                                <a href="#">Software Development</a>
-                                <a href="#">Cloud Migration</a>
-                                <a href="#">Cybersecurity</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    
-                    <div class="nav-actions">
-                        <a href="#" class="btn btn-outline">Get Started</a>
-                    </div>
-                </div>
-                
-                <button class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
+            <div class="header-cta">
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <!-- 幻灯片部分 -->
-<section class="hero-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration=".2s">Welcome to Our Website</h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration=".5s">We provide the best services for your business needs. <br> Our team is dedicated to delivering exceptional results.</p>
-                    <a href="#" class="btn btn-main wow fadeInUp" data-wow-delay="0.7s" data-wow-duration=".5s">Get Started</a>
+    <!-- Hero Area Section Start -->
+    <section class="hero-area">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="container">
+                    <div class="content">
+                        <h2>You Think We Built Your Vision</h2>
+                        <h1>Elevating Your Business With Industry Experts</h1>
+                        <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="container">
+                    <div class="content">
+                        <h2>You Think We Built Your Vision</h2>
+                        <h1>Transforming Ideas into IT Solutions</h1>
+                        <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="container">
+                    <div class="content">
+                        <h2>You Think We Built Your Vision</h2>
+                        <h1>Innovative Technology Solutions</h1>
+                        <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <!-- 轮播指示点（小圆点） -->
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+        <!-- 轮播导航箭头 -->
+        <button class="slider-nav prev">‹</button>
+        <button class="slider-nav next">›</button>
+    </section>
+    <!-- Hero Area Section End -->
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- About Section -->
+    <section class="about-section" id="about">
         <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
+            <div class="section-header">
+                <h2>About Our Company</h2>
+                <h3>Make Sure Your Objectives Improves Profit Drivers</h3>
+                <p>We envision a future where our clients are at the forefront of their industries, setting new standards of excellence through the transformative power of our consulting services.</p>
+            </div>
+            <div class="about-features">
+                <div class="feature">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Make Sure Your Objectives Improves Profit Drivers</h3>
-                    <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>Improving Your Business Planning</h3>
+                    <h4>Improving Your Business Planning</h4>
                     <p>We envision a future where our clients are at the forefront of their industries, setting new standards of excellence.</p>
                 </div>
-                
-                <div class="feature-card">
+                <div class="feature">
                     <div class="feature-icon">
-                        <i class="fas fa-search-dollar"></i>
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3>Make Sure You Can Evaluate Success</h3>
+                    <h4>Make Sure You Can Evaluate Success</h4>
+                    <p>We envision a future where our clients are at the forefront of their industries, setting new standards of excellence.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Accelerating Digital Transformation</h4>
                     <p>We envision a future where our clients are at the forefront of their industries, setting new standards of excellence.</p>
                 </div>
             </div>
@@ -112,41 +114,35 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services-section" id="services">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">SERVICE WE OFFER</h5>
-                <h2 class="section-title">Our Demanding Services</h2>
-                <p class="section-description">We provide comprehensive IT solutions to help your business thrive in the digital age.</p>
+                <h2>Service We Offer</h2>
+                <h3>Our Demanding Services</h3>
+                <p>We provide comprehensive IT solutions to help your business thrive in the digital age.</p>
             </div>
-            
             <div class="services-grid">
-                <!-- Service 1: 使用原网站图片替换图标 -->
                 <div class="service-card">
-                    <div class="service-icon-img">
-                        <img src="https://glacier711.github.io/html-templet/images/services-1.jpg" alt="Managed IT Services">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
                     </div>
-                    <h3>Managed IT Services</h3>
+                    <h4>Managed IT Services</h4>
                     <p>Custom Software And Application Development Tailored To Business Needs.</p>
                     <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <!-- Service 2: 使用原网站图片替换图标 -->
                 <div class="service-card">
-                    <div class="service-icon-img">
-                        <img src="https://glacier711.github.io/html-templet/images/services-2.jpg" alt="Cloud Migration">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
                     </div>
-                    <h3>Cloud Migration</h3>
+                    <h4>Cloud Migration</h4>
                     <p>Move an organization's data, applications, and services from on-premises servers to a cloud platform.</p>
                     <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <!-- Service 3: 使用原网站图片替换图标 -->
                 <div class="service-card">
-                    <div class="service-icon-img">
-                        <img src="https://glacier711.github.io/html-templet/images/services-3.jpg" alt="Cybersecurity">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Cybersecurity</h3>
+                    <h4>Cybersecurity</h4>
                     <p>Protect your business from digital threats with our comprehensive security solutions.</p>
                     <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -155,60 +151,37 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects-section" id="projects">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">OUR PROJECTS</h5>
-                <h2 class="section-title">Showcase Of Our Recognized Work</h2>
+                <h2>Our Projects</h2>
+                <h3>Showcase Of Our Recognized Work</h3>
             </div>
-            
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Cases</button>
-                <button class="filter-btn" data-filter="business">Business</button>
-                <button class="filter-btn" data-filter="it">IT Solution</button>
-                <button class="filter-btn" data-filter="startup">Startup</button>
-                <button class="filter-btn" data-filter="marketing">Marketing</button>
-            </div>
-            
             <div class="projects-grid">
-                <!-- Project 1: 使用原网站项目图片 -->
-                <div class="project-card" data-category="it">
-                    <div class="project-image" style="background-image: url('https://glacier711.github.io/html-templet/images/project-1.jpg');">
-                        <div class="project-overlay">
-                            <h4>Digital IT Solution</h4>
-                            <p>Move an organization's data, applications, and services from on-premises servers to a cloud platform.</p>
-                        </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Cloud Migration Project">
                     </div>
-                    <div class="project-info">
-                        <h3>Cloud Migration Project</h3>
+                    <div class="project-content">
+                        <h4>Cloud Migration Project</h4>
                         <p>IT Solution</p>
                     </div>
                 </div>
-                
-                <!-- Project 2: 使用原网站项目图片 -->
-                <div class="project-card" data-category="business">
-                    <div class="project-image" style="background-image: url('https://glacier711.github.io/html-templet/images/project-2.jpg');">
-                        <div class="project-overlay">
-                            <h4>Enterprise Resource Planning</h4>
-                            <p>Comprehensive ERP implementation for a manufacturing company.</p>
-                        </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="ERP Implementation">
                     </div>
-                    <div class="project-info">
-                        <h3>ERP Implementation</h3>
+                    <div class="project-content">
+                        <h4>ERP Implementation</h4>
                         <p>Business</p>
                     </div>
                 </div>
-                
-                <!-- Project 3: 使用原网站项目图片 -->
-                <div class="project-card" data-category="startup">
-                    <div class="project-image" style="background-image: url('https://glacier711.github.io/html-templet/images/project-3.jpg');">
-                        <div class="project-overlay">
-                            <h4>Mobile App Development</h4>
-                            <p>Custom mobile application for a fintech startup.</p>
-                        </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="FinTech App">
                     </div>
-                    <div class="project-info">
-                        <h3>FinTech App</h3>
+                    <div class="project-content">
+                        <h4>FinTech App</h4>
                         <p>Startup</p>
                     </div>
                 </div>
@@ -216,44 +189,41 @@
         </div>
     </section>
 
-    <!-- Growth Section -->
-    <section class="growth">
+    <!-- Business Growth Section -->
+    <section class="growth-section">
         <div class="container">
             <div class="growth-content">
-                <div class="growth-text">
-                    <h5 class="section-subtitle">BUSINESS GROWTH</h5>
-                    <h2 class="section-title">Connecting People And Build Technology</h2>
-                    <p>Energistically evisculate an expanded array of meta-services after cross-media strategic theme areas. Interactively simplify interactive customer service before fully tested relationship parallel task high standard.</p>
+                <div class="section-header">
+                    <h2>Business Growth</h2>
+                    <h3>Connecting People And Build Technology</h3>
+                    <p>Energistically evisculate an expanded array of meta-services after cross-media strategic theme areas. Interactively simplify interactive customer service before fully tested relationship parallel task high standards...</p>
                 </div>
-                
-                <div class="growth-stats">
-                    <div class="stat-item">
-                        <div class="stat-header">
+                <div class="progress-bars">
+                    <div class="progress-item">
+                        <div class="progress-header">
                             <span>Business Security</span>
-                            <span class="stat-percentage">85%</span>
+                            <span class="progress-value">85%</span>
                         </div>
-                        <div class="stat-bar">
-                            <div class="stat-progress" style="width: 85%"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
                         </div>
                     </div>
-                    
-                    <div class="stat-item">
-                        <div class="stat-header">
+                    <div class="progress-item">
+                        <div class="progress-header">
                             <span>Career Development</span>
-                            <span class="stat-percentage">65%</span>
+                            <span class="progress-value">65%</span>
                         </div>
-                        <div class="stat-bar">
-                            <div class="stat-progress" style="width: 65%"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
                         </div>
                     </div>
-                    
-                    <div class="stat-item">
-                        <div class="stat-header">
+                    <div class="progress-item">
+                        <div class="progress-header">
                             <span>Business Innovation</span>
-                            <span class="stat-percentage">90%</span>
+                            <span class="progress-value">90%</span>
                         </div>
-                        <div class="stat-bar">
-                            <div class="stat-progress" style="width: 90%"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
                         </div>
                     </div>
                 </div>
@@ -262,88 +232,66 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section class="testimonials-section">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">CUSTOMER FEEDBACKS</h5>
-                <h2 class="section-title">Hear From Our Happy Customers</h2>
+                <h2>Customer Feedbacks</h2>
+                <h3>Hear From Our Happy Customers</h3>
             </div>
-            
-            <div class="testimonial-slider">
-                <!-- Testimonial 1: 使用原网站团队图片作为头像 -->
-                <div class="testimonial-card active">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
                         <p>"Working With Synvo Has Transformed How We Operate. Their Team Helped Us Migrate To The Cloud Seamlessly And Provided Top-Notch Support Every Step Of The Way!"</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://glacier711.github.io/html-templet/images/team-1.jpg" alt="Benjamin Clarke">
+                        <div class="author-img">
+                            <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Benjamin Clarke">
                         </div>
                         <div class="author-info">
-                            <h4>Benjamin Clarke</h4>
+                            <h5>Benjamin Clarke</h5>
                             <p>CEO, TechVision Inc.</p>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Testimonial 2: 使用原网站团队图片作为头像 -->
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
                         <p>"The team at Synvo delivered exceptional results for our digital transformation project. Their expertise and dedication were evident throughout the entire process."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://glacier711.github.io/html-templet/images/team-2.jpg" alt="Sarah Johnson">
+                        <div class="author-img">
+                            <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Sarah Johnson">
                         </div>
                         <div class="author-info">
-                            <h4>Sarah Johnson</h4>
+                            <h5>Sarah Johnson</h5>
                             <p>CTO, InnovateCorp</p>
                         </div>
                     </div>
-                </div>
-                
-                <div class="slider-controls">
-                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <div class="slider-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                    </div>
-                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section class="process">
+    <section class="process-section">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">OUR WORK PROCESS</h5>
-                <h2 class="section-title">We Are Building Great Future Together, Be With Us</h2>
+                <h2>Our Work Process</h2>
+                <h3>We Are Building Great Future Together, Be With Us</h3>
             </div>
-            
             <div class="process-steps">
-                <div class="process-step">
+                <div class="step">
                     <div class="step-number">01</div>
-                    <h3>Business Planning</h3>
+                    <h4>Business Planning</h4>
                     <p>Conduct A Comprehensive Analysis Of The Business's Current State, Identifying Strengths, Weaknesses, Opportunities, And Threats.</p>
                 </div>
-                
-                <div class="process-step">
+                <div class="step">
                     <div class="step-number">02</div>
-                    <h3>Marketing And Branding</h3>
+                    <h4>Marketing And Branding</h4>
                     <p>Develop A Strategic Marketing Plan To Increase Brand Visibility And Reach Target Audiences Through Multiple Channels.</p>
                 </div>
-                
-                <div class="process-step">
+                <div class="step">
                     <div class="step-number">03</div>
-                    <h3>Final Result</h3>
+                    <h4>Final Result</h4>
                     <p>Implement Solutions, Monitor Performance, And Optimize Strategies To Achieve Measurable Business Growth And Success.</p>
                 </div>
             </div>
@@ -351,112 +299,86 @@
     </section>
 
     <!-- Appointment Section -->
-    <section class="appointment">
+    <section class="appointment-section" id="contact">
         <div class="container">
-            <div class="appointment-content">
-                <div class="appointment-text">
-                    <h5 class="section-subtitle">BOOK APPOINTMENT HERE</h5>
-                    <h2 class="section-title">Empower Your Business With Synvo Solutions</h2>
-                    <p>Schedule a consultation with our experts to discuss how we can help transform your business.</p>
-                </div>
-                
-                <div class="appointment-form">
-                    <form id="bookingForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Address" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <select required>
-                                <option value="" disabled selected>Select Service Category</option>
-                                <option value="it">Managed IT Services</option>
-                                <option value="software">Software Development</option>
-                                <option value="cloud">Cloud Migration</option>
-                                <option value="security">Cybersecurity</option>
-                            </select>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
-                    </form>
-                </div>
+            <div class="section-header">
+                <h2>Book Appointment Here</h2>
+                <h3>Empower Your Business With Synvo Solutions</h3>
+                <p>Schedule a consultation with our experts to discuss how we can help transform your business.</p>
+            </div>
+            <div class="appointment-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="service">Select Service Category</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select Service Category</option>
+                            <option value="it">IT Service</option>
+                            <option value="cloud">Cloud Service</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="business">Business</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Appointment Request</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team">
+    <section class="team-section" id="team">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">MEET OUR TEAM</h5>
-                <h2 class="section-title">Modernize Your IT, Maximize Your Business Potential</h2>
+                <h2>Meet Our Team</h2>
+                <h3>Modernize Your IT, Maximize Your Business Potential</h3>
             </div>
-            
-            <div class="team-members">
-                <!-- Team Member 1: 使用原网站团队图片 -->
+            <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://glacier711.github.io/html-templet/images/team-1.jpg" alt="James Anderson">
+                    <div class="member-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="James Anderson">
                     </div>
                     <div class="member-info">
-                        <h3>James Anderson</h3>
+                        <h4>James Anderson</h4>
                         <p>Chief Technology Officer</p>
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
                     </div>
                 </div>
-                
-                <!-- Team Member 2: 使用原网站团队图片 -->
                 <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://glacier711.github.io/html-templet/images/team-2.jpg" alt="Maria Garcia">
+                    <div class="member-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Maria Garcia">
                     </div>
                     <div class="member-info">
-                        <h3>Maria Garcia</h3>
+                        <h4>Maria Garcia</h4>
                         <p>Head of Software Development</p>
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
                     </div>
                 </div>
-                
-                <!-- Team Member 3: 使用原网站团队图片 -->
                 <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://glacier711.github.io/html-templet/images/team-3.jpg" alt="Robert Chen">
+                    <div class="member-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Robert Chen">
                     </div>
                     <div class="member-info">
-                        <h3>Robert Chen</h3>
+                        <h4>Robert Chen</h4>
                         <p>Cybersecurity Director</p>
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
                     </div>
                 </div>
-                
-                <!-- Team Member 4: 使用原网站团队图片 -->
                 <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://glacier711.github.io/html-templet/images/team-4.jpg" alt="Lisa Wong">
+                    <div class="member-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Lisa Wong">
                     </div>
                     <div class="member-info">
-                        <h3>Lisa Wong</h3>
+                        <h4>Lisa Wong</h4>
                         <p>Cloud Solutions Architect</p>
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -464,161 +386,122 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing">
+    <section class="pricing-section">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">OUR PRICING PLANS</h5>
-                <h2 class="section-title">Affordable Pricing Packages</h2>
+                <h2>Our Pricing Plans</h2>
+                <h3>Affordable Pricing Packages</h3>
             </div>
-            
-            <div class="pricing-plans">
+            <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Basic Plan</h3>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">1,000</span>
-                            <span class="period">/month</span>
-                        </div>
+                        <h4>Basic Plan</h4>
+                        <div class="price">$ 1,000 <span>/month</span></div>
                         <p class="billing-info">Billed Annually</p>
+                        <p class="platform-info">Up To 3 Platforms</p>
                     </div>
-                    
-                    <div class="pricing-features">
-                        <p><strong>Up To 3 Platforms</strong></p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Social Media Management</li>
-                            <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
-                            <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
-                            <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
-                            <li><i class="fas fa-check"></i> Monthly Analytics And Performance Report</li>
-                            <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Social Media Management</li>
+                        <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
+                        <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
+                        <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
+                        <li><i class="fas fa-check"></i> Monthly Analytics and Performance Report</li>
+                        <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Choose Plan</a>
                 </div>
-                
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
                     <div class="pricing-header">
-                        <h3>Standard Package</h3>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">2,500</span>
-                            <span class="period">/month</span>
-                        </div>
+                        <h4>Standard Package</h4>
+                        <div class="price">$ 2,500 <span>/month</span></div>
                         <p class="billing-info">Billed Annually</p>
+                        <p class="platform-info">Up To 7 Platforms</p>
                     </div>
-                    
-                    <div class="pricing-features">
-                        <p><strong>Up To 7 Platforms</strong></p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Social Media Management</li>
-                            <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
-                            <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
-                            <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
-                            <li><i class="fas fa-check"></i> Monthly Analytics And Performance Report</li>
-                            <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
-                            <li><i class="fas fa-check"></i> Advanced Analytics Dashboard</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Social Media Management</li>
+                        <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
+                        <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
+                        <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
+                        <li><i class="fas fa-check"></i> Monthly Analytics and Performance Report</li>
+                        <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics Dashboard</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Choose Plan</a>
                 </div>
-                
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Premium Package</h3>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">5,000</span>
-                            <span class="period">/month</span>
-                        </div>
+                        <h4>Premium Package</h4>
+                        <div class="price">$ 5,000 <span>/month</span></div>
                         <p class="billing-info">Billed Annually</p>
+                        <p class="platform-info">Unlimited Platforms</p>
                     </div>
-                    
-                    <div class="pricing-features">
-                        <p><strong>Unlimited Platforms</strong></p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Social Media Management</li>
-                            <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
-                            <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
-                            <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
-                            <li><i class="fas fa-check"></i> Monthly Analytics And Performance Report</li>
-                            <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
-                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
-                            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Social Media Management</li>
+                        <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
+                        <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
+                        <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
+                        <li><i class="fas fa-check"></i> Monthly Analytics and Performance Report</li>
+                        <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Choose Plan</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section class="blog-section">
         <div class="container">
             <div class="section-header">
-                <h5 class="section-subtitle">LATEST BLOG INSIGHTS</h5>
-                <h2 class="section-title">Our Insight Latest News</h2>
+                <h2>Latest Blog Insights</h2>
+                <h3>Our Insight Latest News</h3>
             </div>
-            
-            <div class="blog-posts">
-                <!-- Blog 1: 使用原网站博客图片 -->
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-category">Technology</span>
-                        <span class="blog-date">Dec 15, 2024</span>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="blog-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Lessons Learned and Continuous Improvement">
                     </div>
-                    
-                    <div class="blog-image">
-                        <img src="https://glacier711.github.io/html-templet/images/blog-1.jpg" alt="Lessons Learned And Continuous Improvement">
-                    </div>
-                    
                     <div class="blog-content">
-                        <h3>Lessons Learned And Continuous Improvement</h3>
+                        <div class="blog-meta">
+                            <span class="category">Technology</span>
+                            <span class="date">Dec 15, 2024</span>
+                        </div>
+                        <h4>Lessons Learned and Continuous Improvement</h4>
                         <p>Our Dedicated Support Team Is Available 24/7 To Resolve Your Technical Issues. From Troubleshooting Hardware And Software Problems.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                </div>
-                
-                <!-- Blog 2: 使用原网站博客图片 -->
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-category">Technology</span>
-                        <span class="blog-date">Dec 15, 2024</span>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Why Your Business Needs Database Solution">
                     </div>
-                    
-                    <div class="blog-image">
-                        <img src="https://glacier711.github.io/html-templet/images/blog-2.jpg" alt="Why Your Business Needs Database Solution">
-                    </div>
-                    
                     <div class="blog-content">
-                        <h3>Why Your Business Needs Database Solution</h3>
+                        <div class="blog-meta">
+                            <span class="category">Technology</span>
+                            <span class="date">Dec 10, 2024</span>
+                        </div>
+                        <h4>Why Your Business Needs Database Solution</h4>
                         <p>Implementing a robust database solution is crucial for modern businesses to manage data efficiently and make informed decisions.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                </div>
-                
-                <!-- Blog 3: 使用原网站博客图片 -->
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-category">Technology</span>
-                        <span class="blog-date">Dec 15, 2024</span>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-img">
+                        <img src="https://glacier711.github.io/html-templet/assets/imgs/gallery/gallery-50.webp" alt="Small Business Essentials">
                     </div>
-                    
-                    <div class="blog-image">
-                        <img src="https://glacier711.github.io/html-templet/images/blog-3.jpg" alt="Small Business Essentials">
-                    </div>
-                    
                     <div class="blog-content">
-                        <h3>Small Business Essentials</h3>
+                        <div class="blog-meta">
+                            <span class="category">Business</span>
+                            <span class="date">Dec 5, 2024</span>
+                        </div>
+                        <h4>Small Business Essentials</h4>
                         <p>Key technology investments that can help small businesses compete effectively in today's digital marketplace.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -627,67 +510,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <a href="index.html" class="footer-logo">MEDO</a>
-                    <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
-                    
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Address</h4>
-                                <p>34 Elm Street, Suite 500</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>info@medo.com</p>
-                            </div>
-                        </div>
+                <div class="footer-col">
+                    <div class="logo">
+                        <h2>Synvo</h2>
                     </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="#">Managed IT Services</a></li>
-                        <li><a href="#">Database Solution</a></li>
-                        <li><a href="#">App Development</a></li>
-                        <li><a href="#">Data Protection</a></li>
-                        <li><a href="#">Machine Learning</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h3>Latest Posts</h3>
-                    <ul>
-                        <li><a href="#">Why Your Business Needs Database Solution</a></li>
-                        <li><a href="#">Small Business Essentials</a></li>
-                        <li><a href="#">Lessons Learned And Continuous Improvement</a></li>
-                        <li><a href="#">Cybersecurity Best Practices</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-newsletter">
-                    <h3>Sign Up To Our Newsletters</h3>
-                    <p>Subscribe to our newsletter to receive updates on our latest services and insights.</p>
-                    
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter Your Email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                    
+                    <p>We provide innovative IT solutions to help businesses thrive in the digital age. Our team is dedicated to delivering exceptional results.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -695,35 +522,41 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Managed IT Services</a></li>
+                        <li><a href="#">Cloud Migration</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Business Consulting</a></li>
+                        <li><a href="#">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@synvo.com</li>
+                    </ul>
+                </div>
             </div>
-            
             <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>Copyright © 2025 By MEDO. All Rights Reserved.</p>
-                </div>
-                
-                <div class="footer-policy">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Site Map</a>
-                </div>
+                <p>&copy; 2024 Synvo. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- WOW.js for scroll animations -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    // 初始化WOW.js
-    new WOW().init();
-</script>
+    <script src="js/script.js"></script>
 </body>
 </html>
