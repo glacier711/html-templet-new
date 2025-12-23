@@ -1,6 +1,6 @@
-// DOM Ready Function
+// 页面加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
-    // Close Announcement Bar
+    // 1. 关闭公告栏功能
     const closeAnnouncementBtn = document.querySelector('.close-announcement');
     const announcementBar = document.querySelector('.announcement-bar');
     
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Mobile Navigation Toggle
+    // 2. 移动端导航菜单切换
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
     
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
         });
         
-        // Close mobile menu when clicking on a link
+        // 点击导航链接后关闭菜单
         const navLinks = document.querySelectorAll('.nav-links a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Sticky Header on Scroll
+    // 3. 滚动时固定头部
     const header = document.querySelector('.header');
     
     window.addEventListener('scroll', function() {
@@ -43,21 +43,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Project Filtering
+    // 4. 项目筛选功能
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
     
     if (filterButtons.length > 0 && projectCards.length > 0) {
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from all buttons
+                // 移除所有按钮的激活状态
                 filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
+                // 为当前点击的按钮添加激活状态
                 this.classList.add('active');
                 
                 const filterValue = this.getAttribute('data-filter');
                 
-                // Show/hide project cards based on filter
+                // 根据筛选值显示/隐藏项目卡片
                 projectCards.forEach(card => {
                     const category = card.getAttribute('data-category');
                     
@@ -79,32 +79,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Testimonial Slider
+    // 5. 客户评价轮播
     const testimonialCards = document.querySelectorAll('.testimonial-card');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     const dots = document.querySelectorAll('.dot');
     let currentSlide = 0;
     
+    // 显示指定索引的幻灯片
     function showSlide(index) {
-        // Hide all slides
+        // 隐藏所有幻灯片
         testimonialCards.forEach(card => {
             card.classList.remove('active');
         });
         
-        // Remove active class from all dots
+        // 移除所有圆点的激活状态
         dots.forEach(dot => {
             dot.classList.remove('active');
         });
         
-        // Show current slide and activate corresponding dot
+        // 显示当前幻灯片并激活对应的圆点
         testimonialCards[index].classList.add('active');
         dots[index].classList.add('active');
         currentSlide = index;
     }
     
     if (prevBtn && nextBtn && dots.length > 0) {
-        // Next button click
+        // 下一张按钮点击事件
         nextBtn.addEventListener('click', function() {
             let nextIndex = currentSlide + 1;
             if (nextIndex >= testimonialCards.length) {
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showSlide(nextIndex);
         });
         
-        // Previous button click
+        // 上一张按钮点击事件
         prevBtn.addEventListener('click', function() {
             let prevIndex = currentSlide - 1;
             if (prevIndex < 0) {
@@ -122,14 +123,14 @@ document.addEventListener('DOMContentLoaded', function() {
             showSlide(prevIndex);
         });
         
-        // Dot click
+        // 圆点点击事件
         dots.forEach((dot, index) => {
             dot.addEventListener('click', function() {
                 showSlide(index);
             });
         });
         
-        // Auto slide every 5 seconds
+        // 自动轮播（每5秒切换一次）
         setInterval(() => {
             let nextIndex = currentSlide + 1;
             if (nextIndex >= testimonialCards.length) {
@@ -139,34 +140,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
     
-    // Booking Form Submission
+    // 6. 预约表单提交
     const bookingForm = document.getElementById('bookingForm');
     
     if (bookingForm) {
         bookingForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
+            // 获取表单值
             const name = this.querySelector('input[type="text"]').value;
             const email = this.querySelector('input[type="email"]').value;
             const service = this.querySelector('select').value;
             
-            // Basic validation
+            // 基本验证
             if (!name || !email || !service) {
                 alert('Please fill in all fields.');
                 return;
             }
             
-            // Here you would typically send the data to a server
-            // For this example, we'll just show a success message
+            // 在实际应用中，这里应该发送数据到服务器
             alert(`Thank you, ${name}! Your appointment request has been received. We will contact you at ${email} regarding ${service} services.`);
             
-            // Reset form
+            // 重置表单
             this.reset();
         });
     }
     
-    // Newsletter Form Submission
+    // 7. 新闻订阅表单提交
     const newsletterForm = document.querySelector('.newsletter-form');
     
     if (newsletterForm) {
@@ -181,22 +181,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Email validation
+            // 邮箱格式验证
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert('Please enter a valid email address.');
                 return;
             }
             
-            // Here you would typically send the data to a server
+            // 在实际应用中，这里应该发送数据到服务器
             alert(`Thank you for subscribing to our newsletter! A confirmation has been sent to ${email}.`);
             
-            // Reset form
+            // 清空输入框
             emailInput.value = '';
         });
     }
     
-    // Scroll to Top Button
+    // 8. 返回顶部按钮
     const scrollToTopBtn = document.getElementById('scrollToTop');
     
     if (scrollToTopBtn) {
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Animate elements on scroll
+    // 9. 滚动动画效果
     const animateOnScroll = function() {
         const elements = document.querySelectorAll('.feature-card, .service-card, .project-card, .team-member, .pricing-card, .blog-card');
         
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     
-    // Set initial state for animated elements
+    // 设置动画元素的初始状态
     const animatedElements = document.querySelectorAll('.feature-card, .service-card, .project-card, .team-member, .pricing-card, .blog-card');
     animatedElements.forEach(element => {
         element.style.opacity = '0';
@@ -240,18 +240,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     window.addEventListener('scroll', animateOnScroll);
-    // Initial check on page load
+    // 页面加载时立即检查一次
     animateOnScroll();
     
-    // Smooth scroll for anchor links
+    // 10. 平滑滚动到锚点
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             
-            // Skip if it's just "#"
+            // 跳过仅包含"#"的链接
             if (href === '#') return;
             
-            // Check if it's an internal link
+            // 检查是否为内部锚点链接
             if (href.startsWith('#')) {
                 e.preventDefault();
                 
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add active class to nav links based on scroll position
+    // 11. 根据滚动位置高亮导航链接
     const sections = document.querySelectorAll('section[id]');
     
     window.addEventListener('scroll', function() {
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Dropdown menu functionality for mobile
+    // 12. 移动端下拉菜单功能
     const dropdowns = document.querySelectorAll('.dropdown');
     
     dropdowns.forEach(dropdown => {
@@ -298,27 +298,27 @@ document.addEventListener('DOMContentLoaded', function() {
         const dropdownMenu = dropdown.querySelector('.dropdown-menu');
         
         if (dropdownToggle && dropdownMenu) {
-            // For mobile, make dropdown toggle on click
+            // 在移动设备上，点击切换下拉菜单
             dropdownToggle.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
                     e.stopPropagation();
                     
-                    // Close other dropdowns
+                    // 关闭其他下拉菜单
                     dropdowns.forEach(otherDropdown => {
                         if (otherDropdown !== dropdown) {
                             otherDropdown.classList.remove('active');
                         }
                     });
                     
-                    // Toggle current dropdown
+                    // 切换当前下拉菜单
                     dropdown.classList.toggle('active');
                 }
             });
         }
     });
     
-    // Close dropdowns when clicking outside
+    // 点击外部区域关闭下拉菜单
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.dropdown')) {
             dropdowns.forEach(dropdown => {
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Initialize AOS-like animations for stats
+    // 13. 进度条动画
     const statProgressBars = document.querySelectorAll('.stat-progress');
     
     const animateStats = function() {
@@ -348,6 +348,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     window.addEventListener('scroll', animateStats);
-    // Initial check
+    // 初始检查
     animateStats();
 });
