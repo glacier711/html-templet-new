@@ -1,24 +1,35 @@
-/* Reset & Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* ===== 绿色主题配色方案 ===== */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #7c3aed;
-    --accent-color: #f59e0b;
-    --dark-color: #1e293b;
-    --light-color: #f8fafc;
-    --gray-color: #64748b;
-    --light-gray: #e2e8f0;
+    /* 主绿色系 */
+    --primary-color: #10b981;       /* 主绿色 - 按钮、重要元素 */
+    --primary-dark: #059669;        /* 深绿色 - 悬停状态 */
+    --primary-light: #a7f3d0;       /* 浅绿色 - 背景、高亮 */
+    --primary-bg: #f0fdf4;          /* 极浅绿背景 */
+    
+    /* 辅助色 */
+    --secondary-color: #f59e0b;     /* 橙色 - 点缀、强调 */
+    --accent-color: #8b5cf6;        /* 紫色 - 次要强调 */
+    
+    /* 中性色 */
+    --dark-color: #1f2937;          /* 深灰 - 标题、正文 */
+    --light-color: #f9fafb;         /* 浅灰 - 背景 */
+    --gray-color: #6b7280;          /* 中灰 - 副文本 */
+    --light-gray: #e5e7eb;          /* 浅灰 - 边框、分隔线 */
     --white: #ffffff;
-    --black: #0f172a;
+    --black: #111827;
+    
+    /* 效果 */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --radius: 8px;
     --transition: all 0.3s ease;
+}
+
+/* ===== 全局样式 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -86,6 +97,7 @@ section {
     margin: 0 auto;
 }
 
+/* ===== 按钮样式 ===== */
 .btn {
     display: inline-block;
     padding: 14px 32px;
@@ -105,7 +117,7 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: #1d4ed8;
+    background-color: var(--primary-dark);
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
@@ -138,11 +150,11 @@ section {
     width: 100%;
 }
 
-/* Announcement Bar */
+/* ===== 公告栏 ===== */
 .announcement-bar {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: var(--white);
-    padding: 10px 0;
+    padding: 12px 0;
     font-size: 14px;
     position: relative;
     z-index: 1000;
@@ -161,9 +173,10 @@ section {
     font-size: 20px;
     cursor: pointer;
     line-height: 1;
+    padding: 0 5px;
 }
 
-/* Header & Navigation */
+/* ===== 页眉与导航 ===== */
 .header {
     position: sticky;
     top: 0;
@@ -222,6 +235,7 @@ section {
     left: 0;
 }
 
+/* ===== 下拉菜单 ===== */
 .dropdown {
     position: relative;
 }
@@ -251,12 +265,21 @@ section {
     display: block;
     padding: 12px 20px;
     border-bottom: 1px solid var(--light-gray);
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
 }
 
 .dropdown-menu a:last-child {
     border-bottom: none;
 }
 
+/* ===== 汉堡菜单 ===== */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -274,9 +297,9 @@ section {
     transition: var(--transition);
 }
 
-/* Hero Section */
+/* ===== 英雄区域 ===== */
 .hero {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
     padding: 120px 0;
     position: relative;
     overflow: hidden;
@@ -307,11 +330,7 @@ section {
     margin-top: 40px;
 }
 
-/* Features Section */
-.features {
-    background-color: var(--white);
-}
-
+/* ===== 特性区域 ===== */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -335,7 +354,7 @@ section {
 .feature-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), #34d399);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -355,9 +374,9 @@ section {
     color: var(--gray-color);
 }
 
-/* Services Section */
+/* ===== 服务区域 ===== */
 .services {
-    background-color: #f8fafc;
+    background-color: var(--primary-bg);
 }
 
 .services-grid {
@@ -382,7 +401,7 @@ section {
 .service-icon {
     width: 60px;
     height: 60px;
-    background-color: rgba(37, 99, 235, 0.1);
+    background-color: rgba(16, 185, 129, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -417,7 +436,7 @@ section {
     gap: 12px;
 }
 
-/* Projects Section */
+/* ===== 项目区域 ===== */
 .project-filters {
     display: flex;
     justify-content: center;
@@ -462,7 +481,7 @@ section {
 
 .project-image {
     height: 250px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color), #34d399);
     position: relative;
 }
 
@@ -511,9 +530,9 @@ section {
     font-size: 14px;
 }
 
-/* Growth Section */
+/* ===== 增长区域 ===== */
 .growth {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    background: linear-gradient(135deg, var(--dark-color) 0%, #374151 100%);
     color: var(--white);
 }
 
@@ -525,7 +544,7 @@ section {
 }
 
 .growth-text .section-subtitle {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .growth-text .section-title,
@@ -559,12 +578,12 @@ section {
 
 .stat-progress {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(90deg, var(--primary-color), #34d399);
     border-radius: 4px;
     transition: width 1.5s ease;
 }
 
-/* Testimonials Section */
+/* ===== 评价区域 ===== */
 .testimonial-slider {
     max-width: 900px;
     margin: 0 auto;
@@ -678,7 +697,7 @@ section {
     background-color: var(--primary-color);
 }
 
-/* Process Section */
+/* ===== 流程区域 ===== */
 .process-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -731,9 +750,9 @@ section {
     color: var(--gray-color);
 }
 
-/* Appointment Section */
+/* ===== 预约区域 ===== */
 .appointment {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--white);
 }
 
@@ -745,7 +764,7 @@ section {
 }
 
 .appointment-text .section-subtitle {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .appointment-text .section-title,
@@ -781,7 +800,7 @@ section {
     border-color: var(--primary-color);
 }
 
-/* Team Section */
+/* ===== 团队区域 ===== */
 .team-members {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -851,7 +870,7 @@ section {
     color: var(--white);
 }
 
-/* Pricing Section */
+/* ===== 价格区域 ===== */
 .pricing-plans {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -887,7 +906,7 @@ section {
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     padding: 6px 20px;
     border-radius: 20px;
@@ -962,7 +981,7 @@ section {
     color: var(--primary-color);
 }
 
-/* Blog Section */
+/* ===== 博客区域 ===== */
 .blog-posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1044,7 +1063,7 @@ section {
     gap: 12px;
 }
 
-/* Footer */
+/* ===== 页脚 ===== */
 .footer {
     background-color: var(--dark-color);
     color: var(--white);
@@ -1228,7 +1247,7 @@ section {
     color: var(--primary-color);
 }
 
-/* Scroll to Top Button */
+/* ===== 返回顶部按钮 ===== */
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -1257,11 +1276,11 @@ section {
 }
 
 .scroll-to-top:hover {
-    background-color: #1d4ed8;
+    background-color: var(--primary-dark);
     transform: translateY(-5px);
 }
 
-/* Responsive Styles */
+/* ===== 响应式设计 ===== */
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
