@@ -98,7 +98,7 @@ section {
 }
 
 .hero-area {
-    background: url('https://glacier711.github.io/html-templet/img/hero-area.jpg') no-repeat center center;
+    background: url('./img/hero-area.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
     color: #fff;
