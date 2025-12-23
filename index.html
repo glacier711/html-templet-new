@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDO - Elevating Your Business With Industry Experts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>Sign Up and Receive upto 20% bonus discount on checkout</p>
+            <button class="close-announcement">&times;</button>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">MEDO</a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="#">About Us</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Testimonials</a>
+                                <a href="#">Pricing</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="#">Managed IT Services</a>
+                                <a href="#">Software Development</a>
+                                <a href="#">Cloud Migration</a>
+                                <a href="#">Cybersecurity</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <a href="#" class="btn btn-outline">Get Started</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h5 class="section-subtitle">YOU THINK WE BUILT YOUR VISION</h5>
+                <h1 class="hero-title">Elevating Your Business<br>With Industry Experts</h1>
+                <p class="hero-description">
+                    We are dedicated to building long-term partnerships with our clients, ensuring their success.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Our Services</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Make Sure Your Objectives Improves Profit Drivers</h3>
+                    <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Improving Your Business Planning</h3>
+                    <p>We envision a future where our clients are at the forefront of their industries, setting new standards of excellence.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Make Sure You Can Evaluate Success</h3>
+                    <p>We envision a future where our clients are at the forefront of their industries, setting new standards of excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">SERVICE WE OFFER</h5>
+                <h2 class="section-title">Our Demanding Services</h2>
+                <p class="section-description">We provide comprehensive IT solutions to help your business thrive in the digital age.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Managed IT Services</h3>
+                    <p>Custom Software And Application Development Tailored To Business Needs.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Cloud Migration</h3>
+                    <p>Move an organization's data, applications, and services from on-premises servers to a cloud platform.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business from digital threats with our comprehensive security solutions.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">OUR PROJECTS</h5>
+                <h2 class="section-title">Showcase Of Our Recognized Work</h2>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Cases</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="it">IT Solution</button>
+                <button class="filter-btn" data-filter="startup">Startup</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="it">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h4>Digital IT Solution</h4>
+                            <p>Move an organization's data, applications, and services from on-premises servers to a cloud platform.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud Migration Project</h3>
+                        <p>IT Solution</p>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="business">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h4>Enterprise Resource Planning</h4>
+                            <p>Comprehensive ERP implementation for a manufacturing company.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ERP Implementation</h3>
+                        <p>Business</p>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="startup">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h4>Mobile App Development</h4>
+                            <p>Custom mobile application for a fintech startup.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FinTech App</h3>
+                        <p>Startup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth Section -->
+    <section class="growth">
+        <div class="container">
+            <div class="growth-content">
+                <div class="growth-text">
+                    <h5 class="section-subtitle">BUSINESS GROWTH</h5>
+                    <h2 class="section-title">Connecting People And Build Technology</h2>
+                    <p>Energistically evisculate an expanded array of meta-services after cross-media strategic theme areas. Interactively simplify interactive customer service before fully tested relationship parallel task high standard.</p>
+                </div>
+                
+                <div class="growth-stats">
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span>Business Security</span>
+                            <span class="stat-percentage">85%</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span>Career Development</span>
+                            <span class="stat-percentage">65%</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span>Business Innovation</span>
+                            <span class="stat-percentage">90%</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">CUSTOMER FEEDBACKS</h5>
+                <h2 class="section-title">Hear From Our Happy Customers</h2>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Working With Synvo Has Transformed How We Operate. Their Team Helped Us Migrate To The Cloud Seamlessly And Provided Top-Notch Support Every Step Of The Way!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Benjamin Clarke">
+                        </div>
+                        <div class="author-info">
+                            <h4>Benjamin Clarke</h4>
+                            <p>CEO, TechVision Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The team at Synvo delivered exceptional results for our digital transformation project. Their expertise and dedication were evident throughout the entire process."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO, InnovateCorp</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">OUR WORK PROCESS</h5>
+                <h2 class="section-title">We Are Building Great Future Together, Be With Us</h2>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Business Planning</h3>
+                    <p>Conduct A Comprehensive Analysis Of The Business's Current State, Identifying Strengths, Weaknesses, Opportunities, And Threats.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Marketing And Branding</h3>
+                    <p>Develop A Strategic Marketing Plan To Increase Brand Visibility And Reach Target Audiences Through Multiple Channels.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Final Result</h3>
+                    <p>Implement Solutions, Monitor Performance, And Optimize Strategies To Achieve Measurable Business Growth And Success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment-content">
+                <div class="appointment-text">
+                    <h5 class="section-subtitle">BOOK APPOINTMENT HERE</h5>
+                    <h2 class="section-title">Empower Your Business With Synvo Solutions</h2>
+                    <p>Schedule a consultation with our experts to discuss how we can help transform your business.</p>
+                </div>
+                
+                <div class="appointment-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Service Category</option>
+                                <option value="it">Managed IT Services</option>
+                                <option value="software">Software Development</option>
+                                <option value="cloud">Cloud Migration</option>
+                                <option value="security">Cybersecurity</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">MEET OUR TEAM</h5>
+                <h2 class="section-title">Modernize Your IT, Maximize Your Business Potential</h2>
+            </div>
+            
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="James Anderson">
+                    </div>
+                    <div class="member-info">
+                        <h3>James Anderson</h3>
+                        <p>Chief Technology Officer</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria Garcia">
+                    </div>
+                    <div class="member-info">
+                        <h3>Maria Garcia</h3>
+                        <p>Head of Software Development</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Robert Chen">
+                    </div>
+                    <div class="member-info">
+                        <h3>Robert Chen</h3>
+                        <p>Cybersecurity Director</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Lisa Wong">
+                    </div>
+                    <div class="member-info">
+                        <h3>Lisa Wong</h3>
+                        <p>Cloud Solutions Architect</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">OUR PRICING PLANS</h5>
+                <h2 class="section-title">Affordable Pricing Packages</h2>
+            </div>
+            
+            <div class="pricing-plans">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">1,000</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-info">Billed Annually</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <p><strong>Up To 3 Platforms</strong></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Social Media Management</li>
+                            <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
+                            <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
+                            <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
+                            <li><i class="fas fa-check"></i> Monthly Analytics And Performance Report</li>
+                            <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Standard Package</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2,500</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-info">Billed Annually</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <p><strong>Up To 7 Platforms</strong></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Social Media Management</li>
+                            <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
+                            <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
+                            <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
+                            <li><i class="fas fa-check"></i> Monthly Analytics And Performance Report</li>
+                            <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
+                            <li><i class="fas fa-check"></i> Advanced Analytics Dashboard</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium Package</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">5,000</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-info">Billed Annually</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <p><strong>Unlimited Platforms</strong></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Social Media Management</li>
+                            <li><i class="fas fa-check"></i> 8 Monthly Social Media Posts</li>
+                            <li><i class="fas fa-check"></i> SEO Strategy & Keyword Research</li>
+                            <li><i class="fas fa-check"></i> Google Ads & Social Media Ad Campaigns</li>
+                            <li><i class="fas fa-check"></i> Monthly Analytics And Performance Report</li>
+                            <li><i class="fas fa-check"></i> Bi-Weekly Strategy Call</li>
+                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">LATEST BLOG INSIGHTS</h5>
+                <h2 class="section-title">Our Insight Latest News</h2>
+            </div>
+            
+            <div class="blog-posts">
+                <div class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Technology</span>
+                        <span class="blog-date">Dec 15, 2024</span>
+                    </div>
+                    
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lessons Learned And Continuous Improvement">
+                    </div>
+                    
+                    <div class="blog-content">
+                        <h3>Lessons Learned And Continuous Improvement</h3>
+                        <p>Our Dedicated Support Team Is Available 24/7 To Resolve Your Technical Issues. From Troubleshooting Hardware And Software Problems.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Technology</span>
+                        <span class="blog-date">Dec 15, 2024</span>
+                    </div>
+                    
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Why Your Business Needs Database Solution">
+                    </div>
+                    
+                    <div class="blog-content">
+                        <h3>Why Your Business Needs Database Solution</h3>
+                        <p>Implementing a robust database solution is crucial for modern businesses to manage data efficiently and make informed decisions.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Technology</span>
+                        <span class="blog-date">Dec 15, 2024</span>
+                    </div>
+                    
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Small Business Essentials">
+                    </div>
+                    
+                    <div class="blog-content">
+                        <h3>Small Business Essentials</h3>
+                        <p>Key technology investments that can help small businesses compete effectively in today's digital marketplace.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">MEDO</a>
+                    <p>We are dedicated to building long-term partnerships with our clients, ensuring their success.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>34 Elm Street, Suite 500</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@medo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Managed IT Services</a></li>
+                        <li><a href="#">Database Solution</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">Data Protection</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Latest Posts</h3>
+                    <ul>
+                        <li><a href="#">Why Your Business Needs Database Solution</a></li>
+                        <li><a href="#">Small Business Essentials</a></li>
+                        <li><a href="#">Lessons Learned And Continuous Improvement</a></li>
+                        <li><a href="#">Cybersecurity Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Sign Up To Our Newsletters</h3>
+                    <p>Subscribe to our newsletter to receive updates on our latest services and insights.</p>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>Copyright © 2025 By MEDO. All Rights Reserved.</p>
+                </div>
+                
+                <div class="footer-policy">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
